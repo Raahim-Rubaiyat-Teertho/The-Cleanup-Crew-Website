@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'music/our_music.css' %}">
+    <title>The Cleanup Crew | Music</title>
+</head>
+<body>
+    <div class="pointers">
+        <h1 class="typing-effect">Our Music</h1>
+        <div class="music_sc">
+            <a href="https://soundcloud.com/orochi-zia/onkr-mix-v7" class="sc">Soundcloud</a>
+        </div>
+
+        <div class="music_yt">
+            <a href="#" class="yt">YouTube</a>
+        </div>
+
+        <div class="music_sp">
+            <a href="#" class="sp">Spotify</a>
+        </div>
+
+        <div class="back_home">
+            <a href="{% url 'home' %}" class="home">Back to Home</a>
+        </div>
+
+        <div class="image">
+            <a href="{% url 'home' %}" class="home"><img src="{% static 'music/img/3123123123.png' %}"></a>
+        </div>
+    </div>
+</body>
+</html>
